@@ -7,6 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		53180C472A278DE100A0B88C /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53180C462A278DE100A0B88C /* UserData.swift */; };
+		53180C492A2A30FC00A0B88C /* ChallengesByPrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53180C482A2A30FC00A0B88C /* ChallengesByPrice.swift */; };
+		53180C4E2A2A33F700A0B88C /* ChallengesPrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53180C4D2A2A33F700A0B88C /* ChallengesPrice.swift */; };
+		53180C552A2B5F7C00A0B88C /* Community21stCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53180C542A2B5F7C00A0B88C /* Community21stCounter.swift */; };
+		53180C572A2B6CF700A0B88C /* FriendsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53180C562A2B6CF700A0B88C /* FriendsPage.swift */; };
+		53180C5B2A2B7EB100A0B88C /* ChallengeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53180C5A2A2B7EB100A0B88C /* ChallengeView.swift */; };
+		53180C5D2A2B897A00A0B88C /* addChallenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53180C5C2A2B897A00A0B88C /* addChallenge.swift */; };
+		53299EBD2A2BD9E1009AC86B /* Challenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53299EBC2A2BD9E1009AC86B /* Challenge.swift */; };
+		53299EBF2A2BDB31009AC86B /* DaysAndTasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53299EBE2A2BDB31009AC86B /* DaysAndTasks.swift */; };
+		53299EC12A2BDD70009AC86B /* DailyTasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53299EC02A2BDD70009AC86B /* DailyTasks.swift */; };
+		53299EC62A2BEA03009AC86B /* _21ERAView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53299EC52A2BEA03009AC86B /* _21ERAView.swift */; };
+		53299EC82A2BF806009AC86B /* LeaderBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53299EC72A2BF806009AC86B /* LeaderBoard.swift */; };
+		533BDDB32A2764E8004D847A /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533BDDB22A2764E8004D847A /* Profile.swift */; };
+		533BDDB52A277490004D847A /* CommunityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533BDDB42A277490004D847A /* CommunityView.swift */; };
+		533BDDB72A2787B5004D847A /* Friends.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533BDDB62A2787B5004D847A /* Friends.swift */; };
 		539D231A2A261701000853C3 /* _1eraApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539D23192A261701000853C3 /* _1eraApp.swift */; };
 		539D231C2A261701000853C3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539D231B2A261701000853C3 /* ContentView.swift */; };
 		539D231E2A261702000853C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 539D231D2A261702000853C3 /* Assets.xcassets */; };
@@ -17,7 +32,7 @@
 		539D23452A26174A000853C3 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539D23442A26174A000853C3 /* Login.swift */; };
 		539D23472A261A55000853C3 /* BackgroundDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539D23462A261A55000853C3 /* BackgroundDesign.swift */; };
 		539D23492A261A99000853C3 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539D23482A261A99000853C3 /* SplashScreenView.swift */; };
-		539D234B2A261B71000853C3 /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539D234A2A261B71000853C3 /* SignUp.swift */; };
+		539D234B2A261B71000853C3 /* Signup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539D234A2A261B71000853C3 /* Signup.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +53,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		53180C462A278DE100A0B88C /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		53180C482A2A30FC00A0B88C /* ChallengesByPrice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengesByPrice.swift; sourceTree = "<group>"; };
+		53180C4D2A2A33F700A0B88C /* ChallengesPrice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengesPrice.swift; sourceTree = "<group>"; };
+		53180C542A2B5F7C00A0B88C /* Community21stCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Community21stCounter.swift; sourceTree = "<group>"; };
+		53180C562A2B6CF700A0B88C /* FriendsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsPage.swift; sourceTree = "<group>"; };
+		53180C5A2A2B7EB100A0B88C /* ChallengeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeView.swift; sourceTree = "<group>"; };
+		53180C5C2A2B897A00A0B88C /* addChallenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addChallenge.swift; sourceTree = "<group>"; };
+		53299EBC2A2BD9E1009AC86B /* Challenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge.swift; sourceTree = "<group>"; };
+		53299EBE2A2BDB31009AC86B /* DaysAndTasks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaysAndTasks.swift; sourceTree = "<group>"; };
+		53299EC02A2BDD70009AC86B /* DailyTasks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyTasks.swift; sourceTree = "<group>"; };
+		53299EC52A2BEA03009AC86B /* _21ERAView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _21ERAView.swift; sourceTree = "<group>"; };
+		53299EC72A2BF806009AC86B /* LeaderBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderBoard.swift; sourceTree = "<group>"; };
+		533BDDB22A2764E8004D847A /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		533BDDB42A277490004D847A /* CommunityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityView.swift; sourceTree = "<group>"; };
+		533BDDB62A2787B5004D847A /* Friends.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friends.swift; sourceTree = "<group>"; };
 		539D23162A261701000853C3 /* 21era.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 21era.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		539D23192A261701000853C3 /* _1eraApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _1eraApp.swift; sourceTree = "<group>"; };
 		539D231B2A261701000853C3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -52,7 +82,7 @@
 		539D23442A26174A000853C3 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		539D23462A261A55000853C3 /* BackgroundDesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundDesign.swift; sourceTree = "<group>"; };
 		539D23482A261A99000853C3 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
-		539D234A2A261B71000853C3 /* SignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
+		539D234A2A261B71000853C3 /* Signup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signup.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +110,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		53180C4C2A2A315A00A0B88C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				53180C462A278DE100A0B88C /* UserData.swift */,
+				53180C4D2A2A33F700A0B88C /* ChallengesPrice.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		53180C532A2B5E9200A0B88C /* CommunityContent */ = {
+			isa = PBXGroup;
+			children = (
+				533BDDB62A2787B5004D847A /* Friends.swift */,
+				53180C562A2B6CF700A0B88C /* FriendsPage.swift */,
+				53180C482A2A30FC00A0B88C /* ChallengesByPrice.swift */,
+				53180C542A2B5F7C00A0B88C /* Community21stCounter.swift */,
+			);
+			path = CommunityContent;
+			sourceTree = "<group>";
+		};
+		53299EC22A2BE8D4009AC86B /* ChallengeContent */ = {
+			isa = PBXGroup;
+			children = (
+				53299EBC2A2BD9E1009AC86B /* Challenge.swift */,
+				53299EBE2A2BDB31009AC86B /* DaysAndTasks.swift */,
+				53299EC02A2BDD70009AC86B /* DailyTasks.swift */,
+				53180C5C2A2B897A00A0B88C /* addChallenge.swift */,
+			);
+			path = ChallengeContent;
+			sourceTree = "<group>";
+		};
 		539D230D2A261701000853C3 = {
 			isa = PBXGroup;
 			children = (
@@ -107,8 +168,15 @@
 				539D23462A261A55000853C3 /* BackgroundDesign.swift */,
 				539D23482A261A99000853C3 /* SplashScreenView.swift */,
 				539D231B2A261701000853C3 /* ContentView.swift */,
-				539D23442A26174A000853C3 /* Login.swift */,
-				539D234A2A261B71000853C3 /* SignUp.swift */,
+				53180C4C2A2A315A00A0B88C /* Models */,
+				533BDDB22A2764E8004D847A /* Profile.swift */,
+				53180C5A2A2B7EB100A0B88C /* ChallengeView.swift */,
+				53299EC52A2BEA03009AC86B /* _21ERAView.swift */,
+				53299EC72A2BF806009AC86B /* LeaderBoard.swift */,
+				533BDDB42A277490004D847A /* CommunityView.swift */,
+				53299EC22A2BE8D4009AC86B /* ChallengeContent */,
+				53180C532A2B5E9200A0B88C /* CommunityContent */,
+				539D234C2A2760A9000853C3 /* Login_Signup */,
 				539D231D2A261702000853C3 /* Assets.xcassets */,
 				539D231F2A261702000853C3 /* _1era.entitlements */,
 				539D23202A261702000853C3 /* Preview Content */,
@@ -139,6 +207,15 @@
 				539D23372A261703000853C3 /* _1eraUITestsLaunchTests.swift */,
 			);
 			path = 21eraUITests;
+			sourceTree = "<group>";
+		};
+		539D234C2A2760A9000853C3 /* Login_Signup */ = {
+			isa = PBXGroup;
+			children = (
+				539D23442A26174A000853C3 /* Login.swift */,
+				539D234A2A261B71000853C3 /* Signup.swift */,
+			);
+			path = Login_Signup;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,11 +348,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53299EC62A2BEA03009AC86B /* _21ERAView.swift in Sources */,
 				539D23452A26174A000853C3 /* Login.swift in Sources */,
-				539D234B2A261B71000853C3 /* SignUp.swift in Sources */,
+				539D234B2A261B71000853C3 /* Signup.swift in Sources */,
 				539D231C2A261701000853C3 /* ContentView.swift in Sources */,
+				533BDDB32A2764E8004D847A /* Profile.swift in Sources */,
+				53299EBD2A2BD9E1009AC86B /* Challenge.swift in Sources */,
+				533BDDB72A2787B5004D847A /* Friends.swift in Sources */,
+				53299EC82A2BF806009AC86B /* LeaderBoard.swift in Sources */,
+				53299EC12A2BDD70009AC86B /* DailyTasks.swift in Sources */,
 				539D23492A261A99000853C3 /* SplashScreenView.swift in Sources */,
 				539D231A2A261701000853C3 /* _1eraApp.swift in Sources */,
+				53180C492A2A30FC00A0B88C /* ChallengesByPrice.swift in Sources */,
+				53180C5B2A2B7EB100A0B88C /* ChallengeView.swift in Sources */,
+				53180C5D2A2B897A00A0B88C /* addChallenge.swift in Sources */,
+				533BDDB52A277490004D847A /* CommunityView.swift in Sources */,
+				53180C4E2A2A33F700A0B88C /* ChallengesPrice.swift in Sources */,
+				53299EBF2A2BDB31009AC86B /* DaysAndTasks.swift in Sources */,
+				53180C572A2B6CF700A0B88C /* FriendsPage.swift in Sources */,
+				53180C472A278DE100A0B88C /* UserData.swift in Sources */,
+				53180C552A2B5F7C00A0B88C /* Community21stCounter.swift in Sources */,
 				539D23472A261A55000853C3 /* BackgroundDesign.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -10,13 +10,36 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         ZStack {
-            Image("Splash")
-                .resizable()
-                .scaledToFill()
-                .edgesIgnoringSafeArea(.all)
+         
                
-            VisualEffectView(effect: UIBlurEffect (style: .light))
-               .edgesIgnoringSafeArea(.all)
+            TabView{
+               
+            
+                CommunityView()
+                    .tabItem {
+                        Image(systemName: "person.3.fill")
+                         
+                        Text("Community")
+                    }
+               
+                ChallengeView()
+                    .tabItem {
+                        Image(systemName: "rectangle.fill.on.rectangle.fill")
+                        Text("Challenges")
+                    }
+                _21ERAView()
+                    .tabItem {
+                        Image(systemName: "person.crop.rectangle.fill")
+                        Text("21ERA")
+                    }
+                
+                
+                
+                 
+            }.accentColor(Color("MainColor"))
+                
+                
+               
         }
      
     }

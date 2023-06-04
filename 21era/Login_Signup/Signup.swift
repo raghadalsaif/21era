@@ -22,14 +22,14 @@ struct Signup: View {
                             .foregroundColor(Color("FontLargeTitle"))
                         Text("Create a new Accont")
                             .font(.headline)
-                            .foregroundColor(Color("ArroeColor"))
+                            .foregroundColor(Color("MainColor"))
                     }
                     VStack(spacing:20){
                         HStack {
                             Image(systemName: "pencil.line")
                                 .resizable()
                                 .frame(width: 25 , height: 20)
-                                .foregroundColor(Color("ArroeColor"))
+                                .foregroundColor(Color("MainColor"))
                                 .padding(.leading, 10)
                                 .padding(.trailing, 4)
                             
@@ -48,7 +48,7 @@ struct Signup: View {
                             Image(systemName: "phone")
                                 .resizable()
                                 .frame(width: 25 , height: 25)
-                                .foregroundColor(Color("ArroeColor"))
+                                .foregroundColor(Color("MainColor"))
                                 .padding(.leading, 10)
                                 .padding(.trailing, 4)
                             
@@ -93,7 +93,7 @@ struct Signup: View {
                             .frame(width: 260 , height: 50)
                             .foregroundColor(.white)
                             .font(.title2)
-                            .background(Color("ArroeColor"))
+                            .background(Color("MainColor"))
                             .cornerRadius(15)
                     }
                     

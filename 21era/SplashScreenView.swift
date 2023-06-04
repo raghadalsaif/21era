@@ -21,7 +21,7 @@ struct SplashScreenView: View {
             ZStack {
                 Color("BackColor").opacity(0.1).ignoresSafeArea()
                 
-                Text("21 ERA")
+                Text("21ERA")
                     .font(.largeTitle)
                     .foregroundColor(Color("FontLargeTitle"))
                     .bold()

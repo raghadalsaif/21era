@@ -17,6 +17,8 @@ struct BackgroundDesign: View {
                
             VisualEffectView(effect: UIBlurEffect (style: .light))
                .edgesIgnoringSafeArea(.all)
+            
+       
         }
      
     }

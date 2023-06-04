@@ -21,7 +21,7 @@ struct Login: View {
                         Image(systemName: "phone")
                             .resizable()
                             .frame(width: 25 , height: 25)
-                            .foregroundColor(Color("ArroeColor"))
+                            .foregroundColor(Color("MainColor"))
                             .padding(.leading, 10)
                             .padding(.trailing, 4)
                         
@@ -40,7 +40,7 @@ struct Login: View {
                         Image(systemName: "lock")
                             .resizable()
                             .frame(width: 20 , height: 25)
-                            .foregroundColor(Color("ArroeColor"))
+                            .foregroundColor(Color("MainColor"))
                             .padding(.leading, 12)
                             .padding(.trailing, 4)
                         
@@ -64,7 +64,7 @@ struct Login: View {
                         .frame(width: 260 , height: 50)
                         .foregroundColor(.white)
                         .font(.title2)
-                        .background(Color("ArroeColor"))
+                        .background(Color("MainColor"))
                         .cornerRadius(15)
                 }
                 
@@ -75,7 +75,7 @@ struct Login: View {
                 }) {
                     Text("Forget Password?")
                         .frame(width: 260 , height: 50)
-                        .foregroundColor(Color("ArroeColor"))
+                        .foregroundColor(Color("MainColor"))
                         .font(.headline)
                         
                 }
@@ -91,10 +91,11 @@ struct Login: View {
                             .foregroundColor(Color("FontLargeTitle"))
                             .font(.headline)
                         Button {
+                            Signup()
                             
                         } label: {
                             Text("Sginup")
-                                .foregroundColor(Color("ArroeColor"))
+                                .foregroundColor(Color("MainColor"))
                                 .font(.headline)
                         }
                         
