@@ -12,45 +12,49 @@ struct Challenge: View {
     @State var ChallengeTask: [String] = [ " Task1", " Task2"]
     @State var ChallengeProgress: String = "Nsreen"
     
-    @State private var progress: CGFloat = 0.5
+    @State private var progress: CGFloat = 0.6
 
     
     var body: some View {
     
         NavigationView {
-        
             VStack{
-              
+            
                 Divider()
-                
-                
+                   
                 VStack(alignment: .leading,spacing: 16){
                     Text("Progress")
-                        .font(.title)
+                        .font(.custom("basecoat-bold", size: 24))
                     ProgressView(value: progress)
-                        .progressViewStyle(MyProgressViewStyle(progressColor: Color("ArroeColor")))
+                        .progressViewStyle(MyProgressViewStyle(progressColor: Color("MainColor")))
                 }
+                
                
                 Divider()
                 
                 
                 VStack(alignment: .leading, spacing: 4){
-                    Text(" Days")
-                        .font(.title)
+                    Text("Days")
+                        .font(.custom("basecoat-bold", size: 24))
                     DaysAndTasks()
                      
                 }
-                     
+                
+          
+                
                 
                 
 
               
                 Spacer()
-                
-            }.padding()
+                   
+            }
+           
+            .padding()
+      
             .navigationTitle(ChallengeTitle)
                
-
+     
     
         }
 
@@ -72,14 +76,17 @@ struct Challenge: View {
         }
     }
     
+
+}
+
+
+
+struct MyProgressViewStyle: ProgressViewStyle {
+    var progressColor: Color
     
-    struct MyProgressViewStyle: ProgressViewStyle {
-        var progressColor: Color
-        
-        func makeBody(configuration: Configuration) -> some View {
-            ProgressView(configuration)
-                .accentColor(progressColor)
-        }
+    func makeBody(configuration: Configuration) -> some View {
+        ProgressView(configuration)
+            .accentColor(progressColor)
     }
 }
 

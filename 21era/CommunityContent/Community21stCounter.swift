@@ -15,18 +15,24 @@ struct Community21stCounter: View {
         ZStack {
             Rectangle()
                 .stroke(Color.gray, lineWidth: 2)
-                              .background(Color.gray.opacity(0.1))
-                              .frame(width: 230, height: 50)
-                              .cornerRadius(12)
+                .frame(width: 230, height: 50)
+                .background(Color.gray.opacity(0.1))
+                .cornerRadius(12)
+                      
+            
+            
+            
+                             
+            
             HStack(spacing: 80){
                 VStack{
                     
                     Text("\(countdownTimer.remainingDays)")
-                        .font(.title2)
+                        .font(.custom("basecoat-bold", size: 25))
                         .bold()
                         .foregroundColor(.black)
                     Text("DD")
-                        .font(.footnote)
+                        .font(.custom("basecoat", size: 14))
                     
                     
                 }
@@ -34,11 +40,11 @@ struct Community21stCounter: View {
                 VStack{
                     
                     Text("\(countdownTimer.remainingHours)")
-                        .font(.title2)
+                        .font(.custom("basecoat-bold", size: 25))
                         .bold()
                         .foregroundColor(.black)
                     Text("HH")
-                        .font(.footnote)
+                        .font(.custom("basecoat", size: 14))
                 }
             }
             

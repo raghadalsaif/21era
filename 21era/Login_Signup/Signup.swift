@@ -8,7 +8,7 @@ struct Signup: View {
     var body: some View {
         
         ZStack{
-            BackgroundDesign()
+       
             Color("BackColor").ignoresSafeArea().opacity(0.2)
             
             VStack(spacing: 54){
@@ -17,11 +17,11 @@ struct Signup: View {
                     
                     VStack(alignment: .leading , spacing: 8){
                         Text("Welcome To 21ERA ")
-                            .font(.largeTitle).bold()
+                            .font(.custom("basecoat-bold", size: 34))
                         
                             .foregroundColor(Color("FontLargeTitle"))
                         Text("Create a new Accont")
-                            .font(.headline)
+                            .font(.custom("basecoat", size: 18))
                             .foregroundColor(Color("MainColor"))
                     }
                     VStack(spacing:20){
@@ -35,7 +35,7 @@ struct Signup: View {
                             
                             TextField("UserName", text: $userName)
                                 .foregroundColor(.black)
-                                .font(.body)
+                                .font(.custom("basecoat", size: 16))
                         }
                         .frame(height: 50)
                         .background(Color("TextFildeColor").opacity(0.5))
@@ -54,7 +54,7 @@ struct Signup: View {
                             
                             TextField("Phone number ", text: $PhoneNum)
                                 .foregroundColor(.black)
-                                .font(.body)
+                                .font(.custom("basecoat", size: 16))
                         }
                         .frame(height: 50)
                         .background(Color("TextFildeColor").opacity(0.5))
@@ -66,14 +66,13 @@ struct Signup: View {
                             Image(systemName: "lock")
                                 .resizable()
                                 .frame(width: 20 , height: 25)
-                                .foregroundColor(Color("ArroeColor"))
+                                .foregroundColor(Color("MainColor"))
                                 .padding(.leading, 12)
                                 .padding(.trailing, 4)
                             
                             TextField("Password", text: $password)
                                 .foregroundColor(.black)
-                                .font(.body)
-                        }
+                            .font(.custom("basecoat", size: 16))                        }
                         .frame(height: 50)
                         .background(Color("TextFildeColor").opacity(0.5))
                         .cornerRadius(8)
@@ -92,7 +91,7 @@ struct Signup: View {
                         Text("Signup")
                             .frame(width: 260 , height: 50)
                             .foregroundColor(.white)
-                            .font(.title2)
+                            .font(.custom("basecoat-bold", size: 24))
                             .background(Color("MainColor"))
                             .cornerRadius(15)
                     }
@@ -105,7 +104,7 @@ struct Signup: View {
                             
                             Text("Join with your favorite social media account")
                                 .foregroundColor(Color("FontLargeTitle"))
-                                .font(.callout)
+                                .font(.custom("basecoat", size: 14))
                                 .padding()
                             
                         }
@@ -152,7 +151,7 @@ struct Signup: View {
                 
             } // end Vsack
             .padding()
-        }
+        }.navigationBarBackButtonHidden(true)
     }
     
     

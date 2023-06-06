@@ -10,7 +10,7 @@ import SwiftUI
 struct Friends: View {
     
     let friends = ["Friend 1", "Friend 2", "Friend 3", "Friend 4", "Friend 5", "Friend 6", "Friend 7", "Friend 8", "Friend 9"]
-    
+    let friendsData = ["Sana", "Shaden", "Razan", "Malak", "Raghad"]
     var body: some View {
         
         
@@ -19,37 +19,68 @@ struct Friends: View {
             
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: 1 ) {
-                    ForEach(0..<friends.count) { index in
 
-                        FriendscReqCard()
-                            .padding()
-                    }
+                        
+                    ForEach(0..<friendsData.count - 2, id: \.self) { friend in
+                            NavigationLink(destination: FriendDetailPage(friendName: friendsData[friend])) {
+                              
+                                Image("CharacterBackground2")
+                                    .frame(width: 270 , height: 150 )
+                                    .cornerRadius(12)
+                                    .shadow(color: .gray, radius: 3 , x: 0, y: 0)
+                                    .overlay(
+                                        Image("Character")
+                                            .resizable()
+                                            .aspectRatio(contentMode: .fit)
+                                            .frame(height: 135 )
+                                            .padding(.top )
+                                            .overlay(
+                                                Rectangle()
+                                                    .frame(width: 270 , height: 38 )
+                                                    .foregroundColor(Color.white).blur(radius: 0.9 ).opacity(0.98)
+                                                    .padding(.top , 110)
+                                                    .cornerRadius(12)
+                                                    .overlay(
+                                                        HStack(spacing: 155){
+                                                            
+                                                            Text(friendsData[friend])
+                                                                .foregroundColor(.black)
+                                                                .font(.custom("basecoat", size: 16))
+                                                            Button {
+                                                                
+                                                            } label: {
+                                                                Image(systemName: "hands.clap")
+                                                                    .resizable()
+                                                                    .frame(width: 33, height: 30)
+                                                                    .foregroundColor(Color("MainColor"))
+                                                            }
+                                                            
+                                                            
+                                                        } .padding(.top , 110)
+                                                        
+                                                    )// Overlay 2
+                                                
+                                            )// Overlay 2
+                                        
+                                    )// Overlay 1
+                            }
+                        }
+
+    
+                            
+                  .padding()
+                        
+                        
+                        
+                        
+                        
+
                 }
             }
         }
     
 
-            
-            
-            
-            
-            
-            
-//
-//            ScrollView {
-//                LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: -40) {
-//                    ForEach(0..<friends.count, id: \.self) { index in
-//                        VStack{
-//
-//
-//                            FriendscSeqCard()
-//                                .padding(.all , 10)
-//                        }
-//
-//                    }
-//                }
-//                .padding()
-//            }
+    
         }
 
 }
@@ -88,7 +119,7 @@ struct FriendscReqCard: View {
                             .overlay(
                                 Rectangle()
                                     .frame(width: 270 , height: 38 )
-                                    .foregroundColor(Color.white).blur(radius: 0.9 ).opacity(0.6)
+                                    .foregroundColor(Color.white).blur(radius: 0.9 ).opacity(0.98)
                                     .padding(.top , 110)
                                     .cornerRadius(12)
                                     .overlay(

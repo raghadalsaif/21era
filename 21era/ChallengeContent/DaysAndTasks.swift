@@ -21,7 +21,7 @@ struct DaysAndTasks: View {
             ZStack{
                 
                 Rectangle()
-                    .frame(width: 340 , height: 50)
+                    .frame(width: 345 , height: 50)
                     .foregroundColor(Color("MainColor"))
                     .opacity(0.3)
                     .cornerRadius(17)
@@ -47,10 +47,10 @@ struct DaysAndTasks: View {
                 
                 Divider()
                 
-                VStack{
+                VStack(alignment: .leading){
                     Text("Daily Task")
-                        .font(.title)
-                     //   .padding()
+                        .font(.custom("basecoat-bold", size: 24))
+                   
                      
                         DailyTasks()
               
@@ -80,7 +80,7 @@ struct DayButton: View {
             selectedDay = day
         }) {
             Text("\(day)")
-                .font(.title2)
+                .font(.custom("basecoat", size: 20))
                 .frame(width: 40, height: 45)
                 .foregroundColor(.white)
                 .background(dayBackground)

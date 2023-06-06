@@ -22,7 +22,7 @@ struct SplashScreenView: View {
                 Color("BackColor").opacity(0.1).ignoresSafeArea()
                 
                 Text("21ERA")
-                    .font(.largeTitle)
+                    .font(.custom("basecoat-bold", size: 50))
                     .foregroundColor(Color("FontLargeTitle"))
                     .bold()
                     .padding(.bottom , 500)
@@ -57,7 +57,7 @@ struct SplashScreenView: View {
                 }.padding(.top ,620)
             }
             .onAppear {
-                DispatchQueue.main.asyncAfter(deadline: .now() + 2.8) {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
                     withAnimation {
                         self.isActive = true
                     }

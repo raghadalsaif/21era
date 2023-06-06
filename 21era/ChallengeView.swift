@@ -23,11 +23,12 @@ struct ChallengeView: View {
                     
                     NavigationLink(destination: addChallenge()) {
                         Image(systemName: "plus.circle")
-                            .font(.title2)
+                            .font(.title)
                             .foregroundColor(Color("MainColor"))
                         
                     }
                      
+                    
                             
                         
                         
@@ -40,11 +41,13 @@ struct ChallengeView: View {
                 Spacer()
                 VStack(alignment: .center ,spacing: 12){
                     Text("Challenge is Empty")
+                        .font(.custom("basecoat-bold", size: 20))
                         .font(.title2)
                         
                     Text(massege)
                         .frame(maxWidth: .infinity)
                         .multilineTextAlignment(.center)
+                        .font(.custom("basecoat", size: 15))
 
                     
                 }.padding().foregroundColor(.gray)
@@ -53,8 +56,12 @@ struct ChallengeView: View {
 
                 
             }
-        }
+        }  .navigationBarBackButtonHidden(true)
+            
+        
+        
     }
+
 }
 
 struct ChallengeView_Previews: PreviewProvider {

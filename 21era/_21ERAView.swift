@@ -16,33 +16,66 @@ struct _21ERAView: View {
             let options = ["Profile" , "LeaderBoard"]
             
             VStack{
-                Divider()
-                VStack {
+                
+                HStack{
+                    Text("21ERA")
+                
+                        .font(.custom("basecoat-bold", size: 34))
+                        .font(.largeTitle)
+                        .bold()
 
-                    Picker("", selection: $selectedOption) {
-                        ForEach(0..<options.count) { index in
-                            Text(options[index])
-                                .tag(index)
-                        }
+                    Spacer()
+                    
+                    Text("")
+                    NavigationLink(destination: Login()) {
+                        Image(systemName: "plus.circle")
+                            .font(.title)
+                            .foregroundColor(Color("MainColor"))
+
                     }
-                    .pickerStyle(SegmentedPickerStyle())
-                    .frame(width: 350)
-                    .padding()
+                     
+                            
+                        
+                        
                     
-                    
-                    
-                    if selectedOption == 0 {
-                        Profile()
-                         
-                    }
-                    
-                    
-                    
-                    
-                   
                 }
-                .navigationTitle("21ERA")
+                .padding()
+            
+                
+                Divider()
+                
+                VStack {
+                    
+                    VStack{
+                        VStack(alignment: .leading){
+                            Text("Hi, Nsreen")
+                                .font(.title2)
+                                .font(.custom("basecoat", size: 20))
+                                .bold()
+                            
+                            Text("Be the change you wish to see in the world")
+                                .font(.custom("basecoat", size: 15))
+                                .foregroundColor(Color("MainColor"))
+                            
+                        }
+                        
+                        
+                        
+                        
+                        Picker21ERA()
+                     
+                    }
+                    
+                    Spacer()
+                    
+                    
+                    
+                    
+                }
+                
             }
+            
+//            .navigationTitle("21ERA")
         }
         
     }

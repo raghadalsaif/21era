@@ -20,17 +20,30 @@ struct ChallengesByPrice: View {
     
     @State private var ChallengePrice = challengesPrice(isSubscribed: false , numberofchallenges: "3", Price: "")
     
+    let Pakges = [ "19.00 SR " ,"29.00 SR " ,"39.00 SR " ]
     
     var body: some View {
         ScrollView {
             
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: 1 ) {
-                    ForEach(0..<3) { index in
+                    ForEach(0..<Pakges.count) { index in
                         
-                        
+                        ZStack{
                         ChallengesByPriceCards()
-
+                        
+                            VStack(alignment: .leading, spacing: 30 ){
+                                Text(Pakges[index])
+                                    .font(.custom("basecoat-bold", size: 30))
+                                    .foregroundColor(Color.white)
+                                    .padding(.trailing , 60)
+                                Text("For \(index+1) AI Challenge" )
+                                    .font(.custom("basecoat-bold", size: 20))
+                                    .foregroundColor(Color.white)
+                                    .padding(.trailing , 60)
+                            }
+                            
+                        }
                             .padding()
                         
                     }
@@ -46,24 +59,35 @@ struct ChallengesByPriceCards: View {
     
     @State private var ChallengePrice = challengesPrice(isSubscribed: false , numberofchallenges: "3", Price: "")
     
+    let Pakges = [ "19.00 SR " ,"29.00 SR " ,"39.00 SR " ]
+ 
+    
+    
+    
     var body: some View {
         
         ZStack{
             
             
-            Button {
-                //
-                
-            } label: {
-             
-                Rectangle()
-                    .fill(LinearGradient(gradient: Gradient(colors: [Color("price1"), Color("price2")]), startPoint: .trailing , endPoint: .leading))
-                    .frame(width: 270 , height: 150 )
-                    .cornerRadius(12)
-                    .shadow(color: .gray, radius: 5 , x: 0, y: 0)
-                
+         
+     
+                    Button {
+                        //
+                        
+                    } label: {
+                        Rectangle()
+                            .fill(LinearGradient(gradient: Gradient(colors: [Color("price1") ,  Color("price2")]), startPoint: .trailing , endPoint: .leading))
+                            .frame(width: 270 , height: 150 )
+                            .cornerRadius(12)
+                            .shadow(color: .gray, radius: 3, x: 0, y: 0)
+                         
+                        
+                    }
                     
-            }
+                    
+                
+            
+     
             
             
         }

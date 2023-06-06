@@ -1,106 +1,116 @@
 import SwiftUI
 
 struct Login: View {
-    @State private var PhoneNumber: String = ""
+    @State private var Emaill: String = ""
     @State private var password: String = ""
     
     var body: some View {
         
         ZStack{
        
-            BackgroundDesign()
+    
             Color("BackColor").ignoresSafeArea().opacity(0.2)
             
             
-            VStack(spacing: 32){
+            VStack(spacing: 50){
                 
-                
-                VStack(alignment: .leading, spacing: 16){
+                VStack(alignment: .leading , spacing: 8){
+                    Text("Welcome Back")
+                        .font(.custom("basecoat-bold", size: 34))
                     
-                    HStack {
-                        Image(systemName: "phone")
-                            .resizable()
-                            .frame(width: 25 , height: 25)
-                            .foregroundColor(Color("MainColor"))
-                            .padding(.leading, 10)
-                            .padding(.trailing, 4)
-                        
-                        TextField("PhoneNumber", text: $PhoneNumber)
-                            .foregroundColor(.black)
-                            .font(.body)
-                    }
-                    .frame(height: 50)
-                    .background(Color("TextFildeColor").opacity(0.5))
-                    .cornerRadius(8)
-                    .padding(.horizontal)
-                    
-                    
-                    
-                    HStack {
-                        Image(systemName: "lock")
-                            .resizable()
-                            .frame(width: 20 , height: 25)
-                            .foregroundColor(Color("MainColor"))
-                            .padding(.leading, 12)
-                            .padding(.trailing, 4)
-                        
-                        TextField("Password", text: $password)
-                            .foregroundColor(.black)
-                            .font(.body)
-                    }
-                    .frame(height: 50)
-                    .background(Color("TextFildeColor").opacity(0.5))
-                    .cornerRadius(8)
-                    .padding(.horizontal)
-                    
-                }
-                
-                // Button for performing login action
-                Button(action: {
-                    // Perform login logic here
-                    login()
-                }) {
-                    Text("Login")
-                        .frame(width: 260 , height: 50)
-                        .foregroundColor(.white)
-                        .font(.title2)
-                        .background(Color("MainColor"))
-                        .cornerRadius(15)
-                }
-                
-                Button(action: {
-                    // Perform login logic here
-             
-                    
-                }) {
-                    Text("Forget Password?")
-                        .frame(width: 260 , height: 50)
-                        .foregroundColor(Color("MainColor"))
-                        .font(.headline)
-                        
-                }
-                
-                VStack( alignment: .leading, spacing: 16){
-                    Text("-----------------OR-----------------")
-                        .font(.title3)
                         .foregroundColor(Color("FontLargeTitle"))
                     
                     
-                    HStack{
-                        Text("Don’t have an account?")
-                            .foregroundColor(Color("FontLargeTitle"))
-                            .font(.headline)
-                        Button {
-                            Signup()
-                            
-                        } label: {
-                            Text("Sginup")
+                }.padding(.trailing,90)
+                
+                
+                VStack(spacing: 20){
+                    VStack(alignment: .leading, spacing: 16){
+                        
+                        HStack {
+                            Image(systemName: "envelope")
+                                .resizable()
+                                .frame(width: 25 , height: 20)
                                 .foregroundColor(Color("MainColor"))
-                                .font(.headline)
+                                .padding(.leading, 10)
+                                .padding(.trailing, 4)
+                            
+                            TextField("Email", text: $Emaill)
+                                .foregroundColor(.black)
+                            .font(.custom("basecoat", size: 16))                        }
+                        .frame(height: 50)
+                        .background(Color("TextFildeColor").opacity(0.5))
+                        .cornerRadius(8)
+                        .padding(.horizontal)
+                        
+                        
+                        
+                        HStack {
+                            Image(systemName: "lock")
+                                .resizable()
+                                .frame(width: 20 , height: 25)
+                                .foregroundColor(Color("MainColor"))
+                                .padding(.leading, 12)
+                                .padding(.trailing, 4)
+                            
+                            TextField("Password", text: $password)
+                                .foregroundColor(.black)
+                                .font(.custom("basecoat", size: 16))
                         }
+                        .frame(height: 50)
+                        .background(Color("TextFildeColor").opacity(0.5))
+                        .cornerRadius(8)
+                        .padding(.horizontal)
                         
                     }
                     
+                    // Button for performing login action
+                    Button(action: {
+                        // Perform login logic here
+                        login()
+                    }) {
+                        Text("Login")
+                            .frame(width: 260 , height: 50)
+                            .foregroundColor(.white)
+                            .font(.custom("basecoat-bold", size: 24))
+
+                            .background(Color("MainColor"))
+                            .cornerRadius(15)
+                    }
+                    .padding(.top , 70)
+                    
+                    Button(action: {
+                        // Perform login logic here
+                        
+                        
+                    }) {
+                        Text("Forget Password?")
+                            .frame(width: 260 , height: 50)
+                            .foregroundColor(Color("MainColor"))
+                            .font(.custom("basecoat", size: 16))
+                        
+                    }
+                    
+                    VStack( alignment: .leading, spacing: 16){
+                        Text("---------------------------OR---------------------------")
+                            .font(.footnote)
+                            .foregroundColor(Color("FontLargeTitle"))
+                        
+                        
+                        HStack{
+                            Text("Don’t have an account?")
+                                .foregroundColor(Color("FontLargeTitle"))
+                                .font(.custom("basecoat", size: 16))
+                           
+                            NavigationLink(destination: Signup()) {
+                                Text("Sginup")
+                                    .foregroundColor(Color("MainColor"))
+                                    .font(.custom("basecoat", size: 17))                            }
+                         
+                            
+                        }
+                        
+                    }
                 }
             }
             .padding()
@@ -120,7 +130,7 @@ struct Login: View {
         }
         
         // Prepare parameters for the login request
-        let parameters = ["PhoneNumber": PhoneNumber, "password": password]
+        let parameters = ["PhoneNumber": Emaill, "password": password]
         let jsonData = try? JSONSerialization.data(withJSONObject: parameters)
         
         // Configure the request

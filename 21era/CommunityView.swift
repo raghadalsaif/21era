@@ -8,80 +8,112 @@
 import SwiftUI
 
 struct CommunityView: View {
+    
+    
+    
     var body: some View {
 
         NavigationView{
+       
+                
+            
             ZStack{
-           
-                VStack(alignment: .leading ,spacing: 1){
-                    
-                    Divider()
-                    
-                    VStack(alignment: .leading , spacing: 40){
+        
+                ScrollView{
+                    VStack{
                         
+                        Divider()
                         
-                        //21st Challenge
-                        VStack(alignment: .leading,spacing: 16){
-                           
-                            Text("21st Challenge")
-                                .font(.title2)
+                        VStack(spacing: 25){
                             
-                            Community21stCounter()
-                            .padding(.leading , 50)
-                        }
-                        
-                        
-                        VStack(spacing: -10){
                             
-                            //Friends
-                            VStack(spacing: 1){
+                            //21st Challenge
+                            VStack(alignment: .leading,spacing: 16){
+                                
                                 HStack(spacing: 210){
-                                    Text("Friends")
-                                        .font(.title2)
+                                    Text("21st Challenge")
+                                        .font(.custom("basecoat-bold", size: 20))
+                                       
                                     
-                                    Button {
-                                        FriendsPage()
+                                    Text("")
+                                    
+                                }
+                                
+                                VStack{
+                                    Community21stCounter()
+                                    Text("21 Era challenge is coming soon")
+                                        .font(.custom("basecoat", size: 13))
+                                        .foregroundColor(Color.gray)
+                                    
+                                }     .padding(.leading , 55)
+                                
+                            }    .padding(.top)
+                            
+                            
+                            VStack(spacing: 25){
+                                
+                                //Friends
+                                VStack(spacing: 1){
+                                    HStack(spacing: 225){
+                                        Text("Friends")
+                                            .font(.custom("basecoat-bold", size: 20))
                                         
-                                    } label: {
                                         
-                                        HStack(spacing:2){
-                                            Text("See All")
-                                            Image(systemName: "chevron.forward")
+                                        NavigationLink(destination:  FriendsPage()) {
+                                            HStack(spacing:2){
+                                                Text("See All")
+                                                    .font(.custom("basecoat-bold", size: 13))
+                                                Image(systemName: "chevron.forward")
+                                                
+                                            }//end HStack
+                                            .foregroundColor(Color("MainColor"))
+                                            .font(.headline)
                                             
-                                        }//end HStack
-                                        .foregroundColor(Color("MainColor"))
-                                        .font(.headline)
+                                        }
                                         
-                                    }//enf button
+                                        
+                                        
+                                        
+                                        
+                                    }//end HStack
                                     
-                                }//end HStack
+                                    Friends()
+                                    
+                                }
                                 
-                                Friends()
                                 
+                                
+                                //Challenge by price
+                                VStack(spacing: 1){
+                                    
+                                    HStack(spacing: 180){
+                                        Text("Challenge by price")
+                                            .font(.custom("basecoat-bold", size: 20))
+                                        
+                                        Text("")
+                                        
+                                    }
+                                    
+                                    ChallengesByPrice()
+                                    
+                                    
+                                    
+                                }
                             }
                             
-                            
-                            //Challenge by price
-                            VStack(alignment: .leading , spacing: 1){
-                                
-                                Text("Challenge by price")
-                                    .font(.title2)
-                                
-                                ChallengesByPrice()
-                                
-                                
-                                
-                            }
                         }
-                    }   .padding()
-                    
-                }// end VStack
-             
+                        
+                        //    .padding()
+                        
+                        
+                    }// end VStack
+                }
                 
                 
                 
                 .navigationTitle("Community")
             }
+            
             
         }// end NavigationView
         

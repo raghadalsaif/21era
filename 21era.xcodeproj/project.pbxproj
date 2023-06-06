@@ -19,6 +19,10 @@
 		53299EC12A2BDD70009AC86B /* DailyTasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53299EC02A2BDD70009AC86B /* DailyTasks.swift */; };
 		53299EC62A2BEA03009AC86B /* _21ERAView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53299EC52A2BEA03009AC86B /* _21ERAView.swift */; };
 		53299EC82A2BF806009AC86B /* LeaderBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53299EC72A2BF806009AC86B /* LeaderBoard.swift */; };
+		53299ECB2A2E10F4009AC86B /* Picker21ERA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53299ECA2A2E10F4009AC86B /* Picker21ERA.swift */; };
+		53299ED12A2E4990009AC86B /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53299ED02A2E4990009AC86B /* OnboardingView.swift */; };
+		53299ED72A2F8082009AC86B /* basecoat-bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 53299ED62A2F8082009AC86B /* basecoat-bold.ttf */; };
+		53299ED92A2F8090009AC86B /* basecoat.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 53299ED82A2F8090009AC86B /* basecoat.ttf */; };
 		533BDDB32A2764E8004D847A /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533BDDB22A2764E8004D847A /* Profile.swift */; };
 		533BDDB52A277490004D847A /* CommunityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533BDDB42A277490004D847A /* CommunityView.swift */; };
 		533BDDB72A2787B5004D847A /* Friends.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533BDDB62A2787B5004D847A /* Friends.swift */; };
@@ -65,6 +69,11 @@
 		53299EC02A2BDD70009AC86B /* DailyTasks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyTasks.swift; sourceTree = "<group>"; };
 		53299EC52A2BEA03009AC86B /* _21ERAView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _21ERAView.swift; sourceTree = "<group>"; };
 		53299EC72A2BF806009AC86B /* LeaderBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderBoard.swift; sourceTree = "<group>"; };
+		53299ECA2A2E10F4009AC86B /* Picker21ERA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Picker21ERA.swift; sourceTree = "<group>"; };
+		53299ED02A2E4990009AC86B /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		53299ED62A2F8082009AC86B /* basecoat-bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "basecoat-bold.ttf"; sourceTree = "<group>"; };
+		53299ED82A2F8090009AC86B /* basecoat.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = basecoat.ttf; sourceTree = "<group>"; };
+		53299EDA2A2F829B009AC86B /* -1era-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "-1era-Info.plist"; sourceTree = SOURCE_ROOT; };
 		533BDDB22A2764E8004D847A /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		533BDDB42A277490004D847A /* CommunityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityView.swift; sourceTree = "<group>"; };
 		533BDDB62A2787B5004D847A /* Friends.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friends.swift; sourceTree = "<group>"; };
@@ -141,6 +150,16 @@
 			path = ChallengeContent;
 			sourceTree = "<group>";
 		};
+		53299EC92A2E0B7B009AC86B /* 21ERAContent */ = {
+			isa = PBXGroup;
+			children = (
+				533BDDB22A2764E8004D847A /* Profile.swift */,
+				53299EC72A2BF806009AC86B /* LeaderBoard.swift */,
+				53299ECA2A2E10F4009AC86B /* Picker21ERA.swift */,
+			);
+			path = 21ERAContent;
+			sourceTree = "<group>";
+		};
 		539D230D2A261701000853C3 = {
 			isa = PBXGroup;
 			children = (
@@ -164,16 +183,19 @@
 		539D23182A261701000853C3 /* 21era */ = {
 			isa = PBXGroup;
 			children = (
+				53299EDA2A2F829B009AC86B /* -1era-Info.plist */,
 				539D23192A261701000853C3 /* _1eraApp.swift */,
 				539D23462A261A55000853C3 /* BackgroundDesign.swift */,
 				539D23482A261A99000853C3 /* SplashScreenView.swift */,
+				53299ED02A2E4990009AC86B /* OnboardingView.swift */,
 				539D231B2A261701000853C3 /* ContentView.swift */,
-				53180C4C2A2A315A00A0B88C /* Models */,
-				533BDDB22A2764E8004D847A /* Profile.swift */,
+				533BDDB42A277490004D847A /* CommunityView.swift */,
 				53180C5A2A2B7EB100A0B88C /* ChallengeView.swift */,
 				53299EC52A2BEA03009AC86B /* _21ERAView.swift */,
-				53299EC72A2BF806009AC86B /* LeaderBoard.swift */,
-				533BDDB42A277490004D847A /* CommunityView.swift */,
+				53299ED62A2F8082009AC86B /* basecoat-bold.ttf */,
+				53299ED82A2F8090009AC86B /* basecoat.ttf */,
+				53180C4C2A2A315A00A0B88C /* Models */,
+				53299EC92A2E0B7B009AC86B /* 21ERAContent */,
 				53299EC22A2BE8D4009AC86B /* ChallengeContent */,
 				53180C532A2B5E9200A0B88C /* CommunityContent */,
 				539D234C2A2760A9000853C3 /* Login_Signup */,
@@ -323,6 +345,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				539D23222A261702000853C3 /* Preview Assets.xcassets in Resources */,
+				53299ED72A2F8082009AC86B /* basecoat-bold.ttf in Resources */,
+				53299ED92A2F8090009AC86B /* basecoat.ttf in Resources */,
 				539D231E2A261702000853C3 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -368,7 +392,9 @@
 				53180C572A2B6CF700A0B88C /* FriendsPage.swift in Sources */,
 				53180C472A278DE100A0B88C /* UserData.swift in Sources */,
 				53180C552A2B5F7C00A0B88C /* Community21stCounter.swift in Sources */,
+				53299ED12A2E4990009AC86B /* OnboardingView.swift in Sources */,
 				539D23472A261A55000853C3 /* BackgroundDesign.swift in Sources */,
+				53299ECB2A2E10F4009AC86B /* Picker21ERA.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -527,6 +553,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "-1era-Info.plist";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -535,7 +562,7 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
@@ -565,6 +592,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "-1era-Info.plist";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -573,7 +601,7 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";

@@ -11,8 +11,36 @@ struct LeaderBoard: View {
     var body: some View {
         
         
+        
         VStack{
             
+            VStack(spacing: -20){
+                
+                VStack(spacing: -20){
+                    
+                    Image("Character")
+                        .resizable()
+                        .frame(width: 80 , height: 75)
+                    
+                    HStack(spacing: 135){
+                        Image("Character")
+                            .resizable()
+                            .frame(width: 80 , height: 75)
+                        
+                    
+                        
+                        Image("Character")
+                            .resizable()
+                            .frame(width: 80 , height: 75)
+                        
+                        
+                        
+                    } .padding()
+                    
+                }
+                
+                
+                
                 Rectangle()
                     .fill(Color("LeaderBoardColor1"))
                     .frame(width: 320 , height: 115)
@@ -27,7 +55,7 @@ struct LeaderBoard: View {
                             .frame(width: 120 , height: 180)
                             .cornerRadius(50)
                             .padding(.bottom , 70)
-                           
+                        
                         
                         
                         HStack{
@@ -43,7 +71,7 @@ struct LeaderBoard: View {
                                     }
                                 
                                 Text("Nsreen")
-                                    .font(.title2)
+                                    .font(.custom("basecoat", size: 18))
                                     .foregroundColor(.white)
                                     .bold()
                                 
@@ -67,7 +95,7 @@ struct LeaderBoard: View {
                                     }
                                 
                                 Text("Shaden")
-                                    .font(.title2)
+                                    .font(.custom("basecoat", size: 18))
                                     .foregroundColor(.white)
                                     .bold()
                                 
@@ -93,7 +121,7 @@ struct LeaderBoard: View {
                                     }
                                 
                                 Text("Razan")
-                                    .font(.title2)
+                                    .font(.custom("basecoat", size: 18))
                                     .foregroundColor(.white)
                                     .bold()
                                 
@@ -103,19 +131,28 @@ struct LeaderBoard: View {
                                     .bold()
                             }
                             
-                        }.padding(.all , 20)
-                            .padding(.trailing ,1)
-                            .padding(.leading , -10)
-                            
-                         
-                                
-                            
+                        }.padding(.all , 15)
+                            .padding(.trailing ,8)
+                            .padding(.leading , 1)
+                        
+                        
+                        
+                        
                     }
                 
-              
-         //   qq()
+            }
             
+            qq()
+ 
+            
+        
         }
+   
+            
+         
+            
+
+        
     }
 }
 
@@ -167,34 +204,57 @@ struct ss: View {
 
 
 
-struct Item: Identifiable {
+struct User: Identifiable {
     var id = UUID()
     var imageName: String
     var score: Int
+    var username: String
+    
 }
 
 struct qq: View {
    
-    var items = [
-           Item(imageName: "item1", score: 8),
-           Item(imageName: "item2", score: 6),
-           Item(imageName: "item3", score: 9)
+    var Users = [
+        User(imageName: "Character", score: 8, username: "Raghad"),
+        User(imageName: "Character", score: 6, username: "Malak"),
+        User(imageName: "Character", score: 9, username: "Sana"),
+        User(imageName: "Character", score: 2, username: "Lolo"),
+        User(imageName: "Character", score: 1, username: "Norah"),
+        User(imageName: "Character", score: 4, username: "Sana"),
+        User(imageName: "Character", score: 0, username: "Manar"),
+        User(imageName: "Character", score: 3, username: "Sara"),
+        User(imageName: "Character", score: 5, username: "May")
        ].sorted(by: { $0.score > $1.score })
       
       var body: some View {
-          List(items) { item in
-              HStack {
-                  Rectangle()
-                      .fill(Color.blue)
-                      .frame(width: 50, height: 50)
-                  
-                  VStack(alignment: .leading) {
-                      Text("Item Name")
-                          .font(.headline)
-                      Text("Score: \(item.score)")
-                          .font(.subheadline)
+          
+          ScrollView{
+              ForEach(0..<Users.count) { index in
+                  ZStack {
+                      Rectangle()
+                          .fill(Color("LeaderBoardColor2").opacity(0.8))
+                          .frame(width: 320 , height: 60)
+                          .cornerRadius(15)
+                      
+                      HStack{
+                          HStack{
+                              Image("\(Users[index].imageName)")
+                                  .resizable()
+                                  .frame(width: 60 , height: 55)
+                              Text("\(Users[index].username)")
+                                  .font(.custom("basecoat", size: 16))
+                                  .foregroundColor(.white)
+                          }
+                          Spacer()
+                          
+                          Text("\(Users[index].score)")
+                              .font(.custom("basecoat", size: 18))
+                              .foregroundColor(.white)
+                          
+                      }.padding(.leading, 40)
+                          .padding(.trailing , 70)
                   }
-              }
+              }// END Foreach
           }
       }
 }

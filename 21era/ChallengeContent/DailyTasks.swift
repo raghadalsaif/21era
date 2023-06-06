@@ -44,7 +44,7 @@ struct DailyTasks: View {
                       RectangleTaskView(task: task)
                   }
               }
-              .padding()
+            //  .padding()
        //   }
 
     }
@@ -84,10 +84,13 @@ struct RectangleTaskView: View {
             .cornerRadius(17)
           //  .animation(.easeInOut(duration: 0.5))
             .overlay(
-                Text(task.name) // Display the name of the task on the rectangle
-                    .foregroundColor(task.isSelected ? Color.white : Color("MainColor"))
-                    .font(.headline)
-                
+                HStack{
+                    Text(task.name) // Display the name of the task on the rectangle
+                        .foregroundColor(task.isSelected ? Color.white : Color("MainColor"))
+                        .font(.custom("basecoat", size: 20))
+                    Spacer()
+                    Text("")
+                }.padding()
             )
     }
 }

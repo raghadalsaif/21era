@@ -21,5 +21,6 @@ struct UserData {
 struct FriendsData {
     
    var username : String
+    var challengeName : String 
     
 }
